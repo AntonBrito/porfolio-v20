@@ -24,6 +24,14 @@
   color: #b50d10;
 }
 
+h3 span {
+  color: #b50d10;
+}
+
+p span {
+  color: #b50d10;
+}
+
 .main-header p {
   font-size: 2rem;
 }
