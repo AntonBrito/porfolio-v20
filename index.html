@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Antons picasso porfolio</title>
   </head>
@@ -24,7 +25,7 @@
           <p>
             This mobile app application was built using React Native and a third
             party API. This app is meant to connect the local surf community and
-            iform users about the wave anf weather conditions at their favorite
+            iform users about the wave and weather conditions at their favorite
             beaches.<br />
             Technology used:<span>React Native</span>
           </p>
@@ -32,7 +33,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-left">
         <img src="img/picture_2.png" alt="" />
         <div>
           <h3><span>Dive</span>Log</h3>
@@ -57,7 +58,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-right">
         <img src="img/picture_4.png" alt="" />
         <div>
           <h3><span>Dongle</span></h3>
@@ -77,5 +78,13 @@
         </div>
       </section>
     </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duretion: 1000
+      });
+    </script>
   </body>
 </html>
