@@ -16,11 +16,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>My picasso porfolio</title>
   </head>
-  <body>
-    <header class="main-header">
+  <body id="home">
+    <!-- <header class="main-header">
       <h1><span>Antonio Brito</span>Gallery</h1>
       <p>Full Stack web/Software developer.</p>
-    </header>
+    </header> -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">AntonBrito</h1>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
     <main class="container">
       <section class="card">
         <img src="img/picture_1.png" alt="" />
@@ -82,12 +93,18 @@
         </div>
       </section>
     </main>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         offset: 400,
         duretion: 1000
+      });
+    </script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+      $(function() {
+        const $gallery = $(".gallery a").simplelightbox();
       });
     </script>
   </body>
