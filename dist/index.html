@@ -71,8 +71,8 @@
       </div>
     </nav>
     <!-- Showcase -->
-    <main class="container" id="projects">
-      <section class="section-c card">
+    <main class="container gallery" id="projects">
+      <section class="section-c card gallery">
         <img src="img/picture-1.png" alt="" />
         <div>
           <h3><span>Surfs</span>Up</h3>
@@ -83,7 +83,7 @@
             beaches.<br />
             Technology used:<span>React Native</span>
           </p>
-          <a href="#" class="btn">Check it out</a>
+          <a href="img/picture-1.png" class="btn">Check it out</a>
         </div>
       </section>
 
@@ -128,7 +128,7 @@
             <span>MongoDB</span>, as well as <span>ExpressJS</span> for an API
             with <span>Node.js</span> and <span>Mongoose</span>.
           </p>
-          <a href="#" class="btn">Check it out</a>
+          <a href="#gallery" class="btn gallery">Check it out</a>
         </div>
       </section>
     </main>
@@ -161,7 +161,7 @@
           </ul>
         </div>
         <div>
-          <h3>My Contact</h3>
+          <h3 id="contact">My Contact</h3>
           <ul>
             <li><a href="#">Antonio Brito</a></li>
             <li><a href="#">Email: tonybrito85@gmail.com</a></li>
@@ -209,7 +209,7 @@
     <script src="js/simple-lightbox.min.js"></script>
     <script>
       $(function() {
-        const $gallery = $(".gallery a").simplelightbox();
+        const $gallery = $(".gallery a").simpleLightbox();
       });
     </script>
   </body>
